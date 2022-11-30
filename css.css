@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUPERMARKET";
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .Portfolio {
+    min-height: 57vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(55%);
+    background-image:url("bg1.JPG");
+    background-size: cover;
+    background-position: center;
+  }
+.menu{
+  position: relative;
+  width: 85%;
+  height: 15vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul{
+  display: flex;
+}
+.menu ul li{
+  padding: 0  17px;
+}
+.menu ul li a{
+  font-weight: bold;
+  font-family:"SUPERMARKET";
+  color: #fff;
+  font-size: 17px;}
+
+/* contnent*/
+.content{
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 44%;
+  left: 58%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.content .header,.grid-card{
+  width: 48%;
+  
+}
+.content .header{
+  color: #fff;
+  padding: 20px;
+}
+.content .header h3{
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight:bold ;
+}
+.content .header h1{
+  font-size: 6.5rem;
+  letter-spacing: 7px
+}
+.content .header p{
+  opacity:.6;
+}
+.grid-card{
+  display:grid;
+  grid-template-columns:auto auto;
+  grid-gap:33px;
+}
+.grid-card .bg2,.bg3,.bg4,.bg5{
+  width: 90%;
+  height: 220px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  position: relative;
+  transition: .4s;
+  
+}
+.bg2 {
+  background-image:url("bg.JPG");
+}
+.bg3 {
+  background-image: url("bg2.JPG");
+}
+.bg4 {
+  background-image: url("bg3.JPG");
+}
+.bg5 {
+  background-image: url("bg5.JPG");
+}
+.content .box h2{
+  position: absolute;
+  bottom: 7px;
+  left: 15px;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 1px 10px rgb(0, 0, 0);
+}
+.content .box:hover{
+  transform: translateY(-15px);
+}
+.image{
+  left: 50px;
+}

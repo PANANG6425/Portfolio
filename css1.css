@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUPERMARKET";
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .Portfolio {
+    min-height: 57vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(55%);
+    background-image:url("bg1.JPG");
+    background-size: cover;
+    background-position: center;
+  }
+.menu{
+  position: relative;
+  width: 85%;
+  height: 15vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul{
+  display: flex;
+}
+.menu ul li{
+  padding: 0  17px;
+}
+.menu ul li a{
+  font-weight: bold;
+  font-family:"SUPERMARKET";
+  color: #fff;
+  font-size: 17px;}
+
+/* contnent*/
+.content{
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 44%;
+  left: 58%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.content .header,.grid-card{
+  width: 48%;
+  
+}
+
+
+.content .header{
+  color: #fff;
+  padding: 20px;
+}
+.content .header h3{
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight:bold ;
+}
+.content .header h1{
+  font-size: 4.5rem;
+  letter-spacing: 7px
+}
+.content .header p{
+  opacity:.6;
+}
+
+.box{
+    font-weight: bold;
+    font-family:"SUPERMARKET";
+    color: #fff;
+    font-size: 20px;
+    left: 843px;
+    top: 739px;
+    position: relative;
+    letter-spacing: 2px;
+    background-color:#425a5a96;
+    border-radius: 0%;
+    text-shadow: 3px 1px 10px rgb(0, 0, 0);
+    width: 51%;
+}
+.bg5{
+  width: 39%;
+  height: 35%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  position: relative;
+  
+  top:17%;
+  left: 50%;
+}
+  
+.bg5{
+  background-image: url("bsd.jpg");
+}
